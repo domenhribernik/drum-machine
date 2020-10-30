@@ -1,11 +1,12 @@
 import { Component } from "react"
 
 const activeStyle = {
-  backgroundColor: "purple"
+  backgroundColor: "#4e9eca"
 }
   
 const inactiveStyle = {
-  backgroundColor: "yellow"
+  backgroundColor: "#CA594E",
+  boxShadow: "2px 2px 5px 2px #893129"
 }
 
 class Buttons extends Component {
@@ -37,7 +38,6 @@ class Buttons extends Component {
   handleKeyPress(e) {
     e.preventDefault()
     if(e.key.toUpperCase() === this.props.letter) {
-      console.log(e.key.toUpperCase())
       this.playSound(e.key.toUpperCase())
     }
   }
@@ -54,14 +54,12 @@ class Buttons extends Component {
   }
 
   activatePad(key) {
-    console.log("activestate");
     this.setState({
       padStyle: activeStyle
     })
   }
 
   deactivatePad(key) {
-    console.log("inactivestate");
     this.setState({
       padStyle: inactiveStyle
     })

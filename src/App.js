@@ -77,9 +77,10 @@ class App extends Component {
   }
 
   handleRange(e) {
-    this.setState({
-      sound: e.target.value
-    })
+    this.setState(prevState => ({
+      sound: e.target.value,
+      display: `Volume: ${prevState.sound}`
+    }))
   }
   
 
@@ -88,7 +89,7 @@ class App extends Component {
       <div className="container">
         <div id="drum-machine">
           <div id="display" style={{fontSize: "4rem", margin: "100px"}}>{this.state.display}</div>
-          <input type="range" id="range" min="0" max="100" value={this.state.sound} onChange={this.handleRange}></input>
+          <input type="range" id="range" min="1 " max="100" step="1" value={this.state.sound} onChange={this.handleRange}></input>
           <div id="pad-buttons">
             {audioList.map((item, id) => (
               <Buttons 

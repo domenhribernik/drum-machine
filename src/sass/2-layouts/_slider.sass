@@ -1,6 +1,6 @@
 input[type="range"]
   outline: 0
-  border: 0
+  border: 1px solid white
   border-radius: 500px
   width: 400px
   max-width: 100%
@@ -36,14 +36,14 @@ input[type="range"]
       width: 40px
       -webkit-appearance: none
       height: 40px
-      cursor: ew-resize
+      cursor: grab
       background: #fff
-      border: 3px solid black
-      box-shadow: -340px 0 0 320px $sliderColor, inset 0 0 0 40px $sliderColor
+      box-shadow: -340px 0 0 320px #CA594E, inset 0 0 0 40px #2D2926
       border-radius: 50%
-      transition: box-shadow 0.2s ease-in-out
+      transition: box-shadow 0.25s ease-in-out
       position: relative
 
     &:active::-webkit-slider-thumb
       background: #fff
-      box-shadow: -340px 0 0 320px $sliderColor, inset 0 0 0 3px $sliderColor
+      cursor: grabbing
+      box-shadow: -340px 0 0 320px #CA594E, inset 0 0 0 3px #2D2926

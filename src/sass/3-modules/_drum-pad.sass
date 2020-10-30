@@ -1,4 +1,32 @@
-#pad-buttons
+#drum-machine
   display: grid
-  grid-template-columns: 150px 150px 150px
-  grid-gap: 5px
+  grid-template-columns: auto auto
+  justify-items: center
+  
+#display
+  border: 5px solid white
+  display: inline-block
+  color: white
+  height: 100px
+  width: 350px
+  text-align: center
+  padding-top: 20px
+  
+#pad-buttons
+  outline: none
+  grid-row-start: 1
+  grid-row-end: span 2
+  display: grid
+  grid-template-columns: $padSize $padSize $padSize
+  grid-template-rows: $padSize $padSize $padSize
+  grid-gap: 10px
+
+.drum-pad
+  height: $padSize
+  width: $padSize
+  outline: none 
+  border: none
+  border-radius: 20px
+  font-size: 3rem
+  color: white
+  text-shadow: 3px 3px 6px black

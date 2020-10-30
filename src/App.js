@@ -79,7 +79,7 @@ class App extends Component {
   handleRange(e) {
     this.setState(prevState => ({
       sound: e.target.value,
-      display: `Volume: ${prevState.sound}`
+      display: `Volume: ${prevState.sound}%`
     }))
   }
   

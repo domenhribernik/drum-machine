@@ -22,7 +22,7 @@ input[type="range"] {
   border-radius: 500px;
   width: 400px;
   max-width: 100%;
-  margin: 24px 0 16px;
+  margin-bottom: 16px;
   transition: box-shadow 0.2s ease-in-out; }
   input[type="range"]::-moz-range-progress {
     background-color: #43e5f7; }
@@ -70,13 +70,15 @@ input[type="range"] {
   color: white;
   height: 100px;
   width: 350px;
+  padding-top: 20px;
   text-align: center;
-  padding-top: 20px; }
+  font-size: 4rem;
+  margin: 0px 60px 40px; }
 
 #pad-buttons {
   outline: none;
   grid-row-start: 1;
-  grid-row-end: span 2;
+  grid-row-end: span 3;
   display: grid;
   grid-template-columns: 150px 150px 150px;
   grid-template-rows: 150px 150px 150px;
@@ -91,5 +93,12 @@ input[type="range"] {
   font-size: 3rem;
   color: white;
   text-shadow: 3px 3px 6px black; }
+
+#title {
+  color: white;
+  line-height: 70px;
+  font-size: 5rem;
+  margin-top: 30px;
+  display: inline-block; }
 
 /*# sourceMappingURL=app.css.map */

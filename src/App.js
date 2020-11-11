@@ -88,7 +88,8 @@ class App extends Component {
     return (
       <div className="container">
         <div id="drum-machine">
-          <div id="display" style={{fontSize: "4rem", margin: "100px"}}>{this.state.display}</div>
+          <h1 id="title">Drum Machine</h1>
+          <div id="display">{this.state.display}</div>
           <input type="range" id="range" min="1 " max="100" step="1" value={this.state.sound} onChange={this.handleRange}></input>
           <div id="pad-buttons">
             {audioList.map((item, id) => (
